@@ -12,5 +12,26 @@
     <div id="example">This will use the CSS background</div>
     <button id="button">Not tomato</button>
     <script src="./js/index.js"></script>
+    <script type="module">
+        import { html, render } from 'https://unpkg.com/lit-html@0.11.4/lit-html.js';
+        
+        const greeting = 'Hello';
+        const literal = html`
+          <h1>
+            ${greeting}, world!
+          </h1>
+        ` 
+        render(
+          literal,
+          document.getElementById('root')
+        );
+        
+        </script>  
+        
+        <div id="root"><div>
 </body>
 </html>
+
+
+    
+    
